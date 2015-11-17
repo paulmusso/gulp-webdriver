@@ -48,6 +48,8 @@ module.exports = function(options) {
                 }));
             }
 
+            stream.emit('end');
+
             done();
             done = null;
         });
